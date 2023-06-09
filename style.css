@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    margin: 5rem;
+    width: max-content;
+    display: inline-block;
+    height: min-content;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    
+}
+body{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px ;
+    overflow: hidden;
+    background-image: url("images/bg-pattern-desktop.svg"); /* Replace 'your-image-url.jpg' with the URL or file path of your image */ /* Adjust the opacity value (0.0 to 1.0) to your desired level */
+    width: 100%;
+    height: 100%;
+      
+}
+.image2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin: 0;
+    width: max-content;
+
+
+}
+.main-body{
+    margin-left: 10rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2 ;
+    grid-row-end: 4;
+}
+h1{
+    font-size:70px ;
+    font-weight: 600;
+}
+
+.were1 {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+.para1{
+    padding-top: 20px;
+    width: 85%;
+    color:  hsl(0, 36%, 70%);
+    line-height: 2;
+
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+#gmailInput{
+    margin-top: 2rem;
+    width: 90%;
+    height: 50px;
+    border-color: rgb(206, 151, 151);
+
+    
+}
+::placeholder{
+    color: rgb(206, 151, 151);
+    height: max-content;
+}
+button {
+    position: relative;
+    bottom: 58px;
+    height: 51px;
+    left:24rem;
+    width: 92px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transform: translateX(10px);
+    border: none;
+    background-image: Linear-gradient(130deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%,0.3));
+}
+
+h5{
+    color: red;
+
+    display: none;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    justify-content: center;
+    right: 10px;
+
+
+}
+.error-image{
+    position: relative;
+    right: 120px;
+    height: 25px;
+    top: 9px;
+    display: none;
+}
+.image4{
+    display: none;
+
+}
+@media (max-width:1377px){
+    h1{
+        font-size: 60px;
+    }
+    button{
+        left: 280px;
+
+    }
+}
+    @media (max-width:1220px){
+        button{
+            left:240px
+    }
+}
+    @media(max-width:1132px){
+        button{
+            left: 210px;
+        }
+    }
+    @media (max-width:1250px){
+        h1{
+            font-size: 55px;
+        }
+    @media (max-width:1193px){
+        h1{
+            font-size: 50px;
+        }
+    }
+    }
+
+@media(max-width:1087px){
+    .main-body{
+        margin-left: 4rem;
+    }
+    .image2{
+        width: 90%;
+        grid-column-start: 3;
+    }
+}
+@media (max-width:380px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-evenly;
+
+    }
+    .images3{
+        display: none;
+    }
+    .image4{
+        display: block;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        margin: 2rem;
+        text-align: center;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-body{
+        margin: 0;
+    }
+    .input{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        padding-top: 20px;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    p{
+        line-height: 1.4;
+        text-align: center;
+
+    }
+    .input{
+        margin-left: 30px;
+    }
+    h5{
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: -20px;
+
+    }
+}
+
